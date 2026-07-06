@@ -1,0 +1,27 @@
+<h3> CREAR NUEVO BLOG </h3>
+
+<form method="POST" action="">
+
+    {% csrf_token %}
+
+    {{ form.errors }}
+
+    <div>
+        <label for="form.name.id_for_label"> NOMBRE DEL BLOG </label> <br>
+        {{ form.name }}
+    </div>
+
+    <div>
+        <label for="form.category.id_for_label"> CATEGORIA DEL BLOG </label> <br>
+        {{ form.category }}
+    </div>
+
+    <div>
+        <label for="form.content.id_for_label"> CONTENIDO DEL BLOG </label> <br>
+        {{ form.content }}
+    </div>
+    <br>
+
+    <button type="submit"> CREAR NUEVO BLOG </button>
+
+</form>

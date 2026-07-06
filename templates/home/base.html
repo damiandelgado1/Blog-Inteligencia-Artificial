@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Título de la página</title>
+</head>
+<body>
+    <!-- Name and Description of the Blog -->
+    <header>
+        <h1> Blog sobre <br> Inteligencia Artificial </h1>
+        <p> Este blog trata sobre todo el contenido relacionado a la Inteligencia Artificial, compartiendo sus diferentes avances y los modelos que hay </p>
+
+        <!-- Create a new Blog -->
+        <nav>
+            <a href="{% url 'post:create_blog' %}"> CREAR NUEVO BLOG </a>
+        </nav>
+    </header>
+
+    <!-- Display all Blog in the site -->
+    <main>
+        {% include "blog/list_blog.html" %}
+    </main>
+</body>
+</html>

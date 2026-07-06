@@ -1,0 +1,6 @@
+<h1> {{ post.name }} </h1>
+<p> {{ post.category }} </p>
+<p> {{ post.content }} </p>
+<p> {{ post.created_at }} </p>
+<a href="{% url 'post:delete_blog' post.pk %}"> ELIMINAR BLOG </a>
+<a href="{% url 'home' %}"> VOLVER AL INICIO </a>

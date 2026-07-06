@@ -1,0 +1,18 @@
+{% block content %}
+
+    <section>
+        {% for post in posts %}
+
+            <article>
+                <h1> {{ post.name }} </h1>
+                <p> {{ post.category }} </p>
+                <p> {{ post.preview }} </p>
+                <p> {{ post.content }} </p>
+                <p> {{ post.created_at }} </p>
+                <a href="{% url 'post:detail_blog' post.pk %}"> VER MAS </a>
+            </article>
+
+        {% endfor %}
+    </section>
+
+{% endblock %}
